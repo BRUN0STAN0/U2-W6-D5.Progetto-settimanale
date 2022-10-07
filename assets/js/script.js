@@ -1,4 +1,4 @@
-setTimeout(loading,000) //! RICORDATI DI MODIFICARE
+setTimeout(loading,3000) //! RICORDATI DI MODIFICARE
 
 function loading() {
     let spinnerContainer = document.querySelector(".spinner-container");
