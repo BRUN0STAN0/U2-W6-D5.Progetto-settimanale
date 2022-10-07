@@ -1,1 +1,6 @@
-@import  url("../../node_modules/bootstrap/dist/css/bootstrap.min.css")
+@import "variables";
+
+@import "../../node_modules/bootstrap/scss/bootstrap"; 
+@import "../../node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+@import "style";

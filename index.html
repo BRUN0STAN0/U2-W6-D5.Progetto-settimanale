@@ -4,32 +4,197 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bruno's - Bear. Vendita di orsacchiotti fatti a mano" />
     <link rel="stylesheet" href="./assets/css/app.css" />
-    <title>Progetto Settimanale</title>
+    <title>Bruno's - Bear</title>
   </head>
   <body>
+    <!-- * START SPINNER -->
+    <div class="container-fluid spinner-container">
+      <div class="spinner position-fixed d-flex flex-column align-items-center gap-3">
+        <div class="spinner-border text-warning" role="status"></div>
+        <span class="text-dark">Bruno's Loading...</span>
+      </div>
+    </div>
+    <!-- ! END SPINNER -->
     <!-- * START NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar w/ text</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-        </ul>
-        <span class="navbar-text"> Navbar text with an inline element </span>
+    <nav class="navbar navbar-expand-lg bg-primary position-sticky">
+      <div class="container">
+        <a class="navbar-brand" href="#"><i class="bi bi-bootstrap"></i> Bruno's</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#partnership">Partnership</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#testimonianze">Testimonianze</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://facebook.it"><i class="bi bi-facebook"></i> </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="http://linkedin.it"><i class="bi bi-linkedin"></i> </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- ! END NAVBAR -->
+    <main data-bs-spy="scroll">
+      <!-- * START SECTION HOME-->
+      <section id="home">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+          <img src="./assets/img/bear-hero.png" class="h-50" alt="Bear Bruno" />
+          <h1 class="text-primary">Luxury Handmade Bear</h1>
+        </div>
+      </section>
+      <!-- ! END SECTION HOME-->
+      <!-- * START SECTION PARTNERSHIP -->
+      <section id="partnership">
+        <div class="container d-flex flex-column justify-content-center align-items-center">
+          <h1 class="text-primary">Our Partner</h1>
+          <p class="text-white text-center mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore ratione eos maxime a architecto atque! Explicabo eos, laboriosam cum dolor magni, magnam, quibusdam ad qui accusamus
+            consectetur animi consequuntur velit.
+          </p>
+          <div class="row mt-5">
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="./assets/img/partner-one.png" alt="Parter One" />
+              <p class="text-white text-center">Microbear</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="./assets/img/partner-two.png" alt="Parter One" />
+              <p class="text-white text-center">AppleBears</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="./assets/img/partner-three.png" alt="Parter One" />
+              <p class="text-white text-center">WindowBear</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="./assets/img/partner-four.png" alt="Parter One" />
+              <p class="text-white text-center">PandaGunners</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="./assets/img/partner-five.png" alt="Parter One" />
+              <p class="text-white text-center">iBear</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="./assets/img/partner-six.png" alt="Parter One" />
+              <p class="text-white text-center">Grizzly Bear</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="./assets/img/partner-seven.png" alt="Parter One" />
+              <p class="text-white text-center">Hard Bear</p>
+            </div>
+            <div class="col-3 d-flex flex-column justify-content-center align-items-center">
+              <img class="img-fluid" src="./assets/img/partner-eight.png" alt="Parter One" />
+              <p class="text-white text-center">Green Bear</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- ! END SECTION PARTNERSHIP -->
+      <!-- * START SECTION TESTIMONIANZE-->
+      <section id="testimonianze">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./assets/img/carousel.jpg" class="d-block w-100" alt="carousel-image" />
+              <div class="carousel-caption">
+                <img src="./assets/img/testimonianza-uno.jpg" class="w-50" alt="Partner one" />
+              </div>
+              <div class="carousel-caption">
+                <h5>Bear of Rose</h5>
+                <p>Ve lo consiglio!!!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/carousel.jpg" class="d-block w-100" alt="carousel-image" />
+              <div class="carousel-caption">
+                <img src="./assets/img/testimonianza-due.jpg" class="w-50" alt="Partner one" />
+              </div>
+              <div class="carousel-caption">
+                <h5>Bear of Lindt</h5>
+                <p>Sono molto buoni e amichevoli.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./assets/img/carousel.jpg" class="d-block w-100" alt="carousel-image" />
+              <div class="carousel-caption">
+                <img src="./assets/img/testimonianza-tre.jfif" class="w-50" alt="Partner one" />
+              </div>
+              <div class="carousel-caption">
+                <h5>Bear of Rose</h5>
+                <p>Vi sconsiglio questa azienda!!!</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- ! END SECTION TESTIMONIANZE-->
+    </main>
+
+    <!-- * START FOOTER -->
+    <footer class="d-flex justify-content-center align-items-center">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-md-4 partner-footer">
+            <h5>PARTNER</h5>
+            <p class="text-white">- Microbear</p>
+            <p class="text-white">- AppleBears</p>
+            <p class="text-white">- WindowBear</p>
+            <p class="text-white">- PandaGunners</p>
+            <p class="text-white">- iBear</p>
+            <p class="text-white">- GrizzlyBear</p>
+            <p class="text-white">- HardBear</p>
+            <p class="text-white">- GreenBear</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <p class="text-white">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae neque deserunt quisquam! Ex dignissimos eligendi iure sapiente repellat mollitia beatae, eos excepturi corrupti, ab
+              tenetur amet praesentium optio, sit molestiae?
+            </p>
+          </div>
+
+          <div class="col-12 col-md-4 text-white">
+            CONTACT US
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+            </div>
+            <button type="submit">INVIA EMAIL</button>
+          </div>
+        </div>
+
+        <p class="text-center">2022 Copyright - Bruno Stano</p>
+      </div>
+    </footer>
+    <!-- ! END FOOTER -->
+
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

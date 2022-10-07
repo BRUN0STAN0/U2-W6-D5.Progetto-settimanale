@@ -1,0 +1,59 @@
+// *START LOADING 
+.spinner {
+    top: 50vh;
+    left: 40vw;
+}
+
+.spinner-container {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    height: 100vh;
+}
+// ! END LOADING
+
+// * START NAVBAR
+.navbar {
+    top: 0;
+    z-index: 10;
+    border-bottom: 10px solid $tertiary;
+}
+// ! END NAVBAR
+
+main {
+    background-color: $secondary;
+    .container {
+        height: 100vh;
+        h1 {
+        text-shadow: 0px 0px 10px white;
+        }
+    }
+    #home {
+        background-image: url("../img/background-two.jpg");
+    }
+    #partnership {
+        background-image: url("../img/background-one.jpg");
+        background-size: cover;
+        img {
+            max-height: 200px;
+        }
+        .row {
+            p {
+                font-weight: 900;
+            }
+        }
+    }
+    #testimonianze {
+        max-height: 100vh;
+        .carousel-caption {
+            text-shadow: 0px 0px 10px black;
+        }
+    }
+}
+
+footer {
+    background-color: $secondary;
+    .partner-footer {
+        line-height: 10px;
+    }
+}
