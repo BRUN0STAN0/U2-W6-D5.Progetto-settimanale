@@ -1,9 +1,24 @@
+.bi-eye {
+    font-size: 30px;
+}
+
+.bi-eye-fill {
+    font-size: 30px;
+}
+
+.invert-mode {
+    @include invert-mode;
+}
+.light-mode {
+    background: none!important;
+}
 // *START LOADING 
 .spinner {
     top: 50vh;
     left: 45vw;
     font-weight: 700;
 }
+
 
 .spinner-container {
     position: fixed;
@@ -21,8 +36,10 @@
 }
 // ! END NAVBAR
 
+
+
 main {
-    background-color: $secondary;
+    background-color: white;
     .container {
         height: 100vh;
         h1 {
@@ -40,9 +57,10 @@ main {
         }
         .row {
             p {
-                font-weight: 900;
+                font-weight: 700;
                 @media screen and (max-width:500px) {
                     font-size: 12px;
+                    font-weight: 300;
                 }
             }
         }

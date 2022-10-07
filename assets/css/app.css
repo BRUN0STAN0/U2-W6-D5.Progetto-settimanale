@@ -10772,6 +10772,22 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.bi-eye {
+  font-size: 30px;
+}
+
+.bi-eye-fill {
+  font-size: 30px;
+}
+
+.invert-mode {
+  filter: invert(100%);
+}
+
+.light-mode {
+  background: none !important;
+}
+
 .spinner {
   top: 50vh;
   left: 45vw;
@@ -10792,7 +10808,7 @@ textarea.form-control-lg {
 }
 
 main {
-  background-color: rgb(63, 65, 57);
+  background-color: white;
 }
 main .container {
   height: 100vh;
@@ -10811,11 +10827,12 @@ main #partnership img {
   max-height: 200px;
 }
 main #partnership .row p {
-  font-weight: 900;
+  font-weight: 700;
 }
 @media screen and (max-width: 500px) {
   main #partnership .row p {
     font-size: 12px;
+    font-weight: 300;
   }
 }
 main #testimonianze {
