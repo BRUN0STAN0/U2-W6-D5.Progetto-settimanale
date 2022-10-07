@@ -10774,7 +10774,8 @@ textarea.form-control-lg {
 }
 .spinner {
   top: 50vh;
-  left: 40vw;
+  left: 45vw;
+  font-weight: 700;
 }
 
 .spinner-container {
@@ -10812,6 +10813,11 @@ main #partnership img {
 main #partnership .row p {
   font-weight: 900;
 }
+@media screen and (max-width: 500px) {
+  main #partnership .row p {
+    font-size: 12px;
+  }
+}
 main #testimonianze {
   max-height: 100vh;
 }
@@ -10824,6 +10830,25 @@ footer {
 }
 footer .partner-footer {
   line-height: 10px;
+}
+
+.fadein {
+  animation: fadein 3s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    transform: translateY(0px);
+  }
+  90% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
