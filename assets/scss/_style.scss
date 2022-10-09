@@ -80,6 +80,21 @@ footer {
     }
 }
 
+
+
+// * FADING 
+
+.fadingXinput {
+    opacity: 0;
+    transform: translateY(-100px);
+}
+
+.fadingXoutput {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: .5s;
+}
+
 // * FADE
 
 .fadein {
@@ -88,17 +103,18 @@ footer {
 
 @keyframes fadein {
     0% {
-        opacity: 1;
-        
+        opacity: 0;
     }
     20% {
         transform: translateY(0px);
+        opacity: 0;
     }
-    90% {
-        transform: translateY(-30px);
+    95% {
+        transform: translateY(-40px);
     }
 
     100% {
-        transform: translateY(0px)
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
