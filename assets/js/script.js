@@ -1,19 +1,37 @@
-setTimeout(loading,3000) //! RICORDATI DI MODIFICARE
-
+// * START SPINNER LOADING
+setTimeout(loading,3000)
 function loading() {
     let spinnerContainer = document.querySelector(".spinner-container");
     spinnerContainer.style.display = "none"
 }
+// ! END SPINNER LOADING
+
+// * START FADE IMG
+let img = document.querySelectorAll('img');
+img.forEach(element => {
+    element.classList.add("fadingXinput");
+});
 
 window.onscroll = function(e) {
-    let img = document.querySelectorAll('img');
-        img.forEach(element => {element.classList.toggle('fadein')})
+    img.forEach(element => {
+        var distInView = element.getBoundingClientRect().top - window.innerHeight + 20;
+        if (distInView < 0) {
+            element.classList.add('fadein');
+            element.classList.add("fadingXoutput");
+        } else {
+            element.classList.remove('fadein');
+            element.classList.remove("fadingXoutput");
+        }
+    })
 }
+// ! END FADE IMG
 
+// * START REVERSE MODE
 let invertMode = document.getElementById("invert-mode");
 invertMode.addEventListener("click", function () {document.body.classList.toggle("invert-mode")});
+// ! END REVERSE MODE
 
-
+// * START LIGHTMODE
 let lightMode = document.getElementById("light-mode");
 lightMode.addEventListener("click", function () {
     document.getElementById("home").classList.toggle("light-mode");
@@ -28,4 +46,4 @@ lightMode.addEventListener("click", function () {
         e.classList.toggle("invert-mode")
     })
 })
-
+// ! END LIGHTMODE
