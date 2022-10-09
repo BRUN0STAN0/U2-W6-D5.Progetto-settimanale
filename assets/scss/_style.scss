@@ -1,10 +1,13 @@
-.bi-eye {
-    font-size: 30px;
-}
-
+.bi-eye,
 .bi-eye-fill {
     font-size: 30px;
 }
+.bi-heart-pulse-fill,
+.bi-heart-pulse {
+    font-size: 25px;
+}
+
+
 
 .invert-mode {
     @include invert-mode;

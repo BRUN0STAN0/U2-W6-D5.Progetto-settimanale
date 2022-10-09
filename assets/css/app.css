@@ -10772,12 +10772,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.bi-eye {
+.bi-eye,
+.bi-eye-fill {
   font-size: 30px;
 }
 
-.bi-eye-fill {
-  font-size: 30px;
+.bi-heart-pulse-fill,
+.bi-heart-pulse {
+  font-size: 25px;
 }
 
 .invert-mode {
